@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "#app": ["./.nuxt/types/app"],
+      "#build": ["./.nuxt/types/build"]
+    },
+    "types": [
+      "@nuxt/types", // Nuxt core types
+      "@nuxtjs/tailwindcss" // Add if you're using Tailwind with Nuxt
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
+}
